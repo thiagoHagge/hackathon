@@ -20,7 +20,7 @@
         // Validar acesso
         if(isset($userData['username'])) {
             $_SESSION['name'] = $userData['name'];
-            header('Location: home.php');
+            header('Location: capacitacao.html');
         } else {
             // Redirecionar usuário
             header('Location: loginEstudante.php?erro=1');

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+
+        <div id="mapAdm" style="width:200px;height: 200px;"></div>
+        <div id="mapTi" style="width:200px;height: 200px;"></div>
+        <div id="mapDataScience" style="width:200px;height: 200px;"></div>
+
+        <script>
+            function myMap() {
+                var location1 = new google.maps.LatLng(-23.7709568,-46.6681783);
+                var location2 = new google.maps.LatLng(-23.4698449,-46.6937815);
+                var location3 = new google.maps.LatLng(-23.619492,-46.7702882);
+                
+                var mapProp1= {
+                    center:location1,
+                    zoom:15,
+                    disableDefaultUI: true,
+                };
+                var mapProp2= {
+                    center:location2,
+                    zoom:15,
+                    disableDefaultUI: true,
+                };
+                var mapProp3= {
+                    center:location3,
+                    zoom:15,
+                    disableDefaultUI: true,
+                };
+                var map1 = new google.maps.Map(document.getElementById("mapAdm"),mapProp1);
+                var map2 = new google.maps.Map(document.getElementById("mapTi"),mapProp2);
+                var map3 = new google.maps.Map(document.getElementById("mapDataScience"),mapProp3);
+                var marker1 = new google.maps.Marker({
+                    position:location1,
+                    map1,
+                    animation:google.maps.Animation.BOUNCE
+                });
+                var marker2 = new google.maps.Marker({
+                    position:location2,
+                    map2,
+                    animation:google.maps.Animation.BOUNCE
+                });
+                var marker3 = new google.maps.Marker({
+                    position:location3,
+                    map3,
+                    animation:google.maps.Animation.BOUNCE
+                });
+
+                marker1.setMap(map1);
+                marker2.setMap(map2);
+                marker3.setMap(map3);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGcy3f_l2hQul2RqJynrXTAGAztTfOu_E&callback=myMap"></script>
+
+    </body>
+</html>
