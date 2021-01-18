@@ -305,7 +305,7 @@
 
 #text-home {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     margin-left: 12px;
     margin-top: 10px;
 }
@@ -370,4 +370,98 @@
     font-size: 19px;
     margin-top: 15px;
     font-weight: 600
+}
+
+#capacitacao{
+    background-color: #F89040;
+    border-radius: 15px;
+    height: 56px;
+    width: 96%;
+    margin-left: 7px;
+    margin-top: 38px;
+}
+
+#tecnologia {
+    background-color: #B1CAF8;
+    border-radius: 15px;
+    height: 260px;
+    width: 96%;
+    margin-left: 7px;
+    margin-top: 38px;
+}
+
+#texto-tec{
+    background-color: #C4C4C4;
+    border-radius: 6px;
+    height: 56px;
+    width: 71%;
+    margin-left: 49px;
+    margin-top: 96px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.tecnologiaImg {
+    width: 68%;
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+#textoEmp {
+    background-color: yellow;
+    border-radius: 6px;
+    height: 56px;
+    width: 71%;
+    margin-left: 49px;
+    margin-top: 166px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.empreendeImg{
+    width: 68%;
+    height: 216px;
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+#empreendedorismo {
+    background-color: #B1CAF8;
+    border-radius: 15px;
+    height: 311px;
+    width: 96%;
+    margin-left: 7px;
+    margin-top: 38px;
+}
+
+#inovacao {
+    background-color: #B1CAF8;
+    border-radius: 15px;
+    height: 260px;
+    width: 96%;
+    margin-left: 7px;
+    margin-top: 38px;
+}
+
+.inovacaoImg {
+    width: 68%;
+    position: absolute;
+    margin-left: 10%;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+#texto-inov{
+    background-color: #C4C4C4;
+    border-radius: 6px;
+    height: 56px;
+    width: 71%;
+    margin-left: 49px;
+    margin-top: 114px;
+    z-index: 1;
+    opacity: 0.9;
 }
