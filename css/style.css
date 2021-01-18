@@ -371,6 +371,7 @@
     margin-top: 15px;
     font-weight: 600
 }
+<<<<<<< HEAD
 
 #capacitacao{
     background-color: #F89040;
@@ -465,3 +466,62 @@
     z-index: 1;
     opacity: 0.9;
 }
+=======
+.title {
+    position: absolute;
+    width: 336px;
+    height: 47px;
+    left: 12px;
+    top: 102px;
+
+    background: #B1CAF8;
+    border-radius: 8px;
+}
+.fontTitle{
+    padding-left: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 200% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+}
+.box {
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: #DD6EFF;
+    border-radius: 8px;
+
+}
+
+.map{
+   
+    margin-left: 30px;
+    width: 150px;
+    height:  150px;
+    z-index: 30;
+    border-radius: 8px;
+}
+.yellowBox {
+    padding: 20px;
+    background: #F9E25D;
+    border-radius: 8px;
+    width: 80%;
+}
+.vaga {
+    background: #C4C4C4;
+    border-radius: 8px;
+    position: absolute;
+    width: 180px;
+    height: 162px;
+    left: 238px;
+    top: 220px;
+}
+>>>>>>> a88a8f33f714c77b2fd235d065029df443c3394e
