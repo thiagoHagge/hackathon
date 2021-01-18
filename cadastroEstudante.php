@@ -102,32 +102,32 @@
                 <p class="description"> Cadastro do Estudante</p>
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput" class="form-label">Nome Completo*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YouBizinho da Hackathon CCR 2021">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YouBizinho da Hackathon CCR 2021" name="name">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput2" class="form-label">Usuário*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="@YouBizinho">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="@YouBizinho" name="username">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput" class="form-label">Data de Nascimento*</label>
-                    <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Insira sua data de nascimento">
+                    <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Insira sua data de nascimento" name="birthday">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput2" class="form-label">CPF*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="___.___.___-__">
-                </div>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="___.___.___-__" name="cpf">
+                </div> 
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput" class="form-label">E-mail*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="YouBizinho@ShaweeCCR.com.br">
+                    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="YouBizinho@ShaweeCCR.com.br" name="email">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput2" class="form-label">Senha*</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="***********">
+                    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="***********" name="password">
                 </div>
     
                 <button type="submit" class="btn btn-primary btn-lg" id="button">Finalizar Cadastro</button>

@@ -1,8 +1,5 @@
 <?php
-    session_start();
-    if(!isset($_SESSION['name'])) {
-        header('Location: index.php?erro=2');
-    }
+    $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -102,21 +99,25 @@
         </nav>
         
     
-        <form method="POST" action="registroEstudante.php" enctype="multipart/form-data" class="login-aluno">
+        <form method="POST" action="validaEstudante.php" enctype="multipart/form-data" class="login-aluno">
             <div class="row">
     
                 <p class="description"> Acesso para Estudante</p>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput" class="form-label"></label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput" placeholder="Login">
+                    <input type="text" class="form-control form-input" id="formGroupExampleInput" placeholder="Login" name="username">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput2" class="form-label"></label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput2" placeholder="Senha">
+                    <input type="text" class="form-control form-input" id="formGroupExampleInput2" placeholder="Senha" name="password">
                 </div>
-    
+                <?php
+                if($erro == 1) {
+                    echo "<p style='color: #ff0000; margin-left: 48px'>Usuário ou senha inválidos</p>";
+                }
+                ?>
                 <button type="submit" class="btn btn-primary btn-lg" id="button">Entrar</button>
                 <button type="button" class="btn"><a href="cadastroEstudante.php" id="acesso-estudante">Primeiro acesso</a></button>
             </div>

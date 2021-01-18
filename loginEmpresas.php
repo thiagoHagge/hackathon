@@ -1,3 +1,6 @@
+<?php
+    $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -7,12 +10,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <script>
-            function confirmar() {
-              confirm("Cadastro realizado com sucesso!");
-              window.location.href = "index.html";
-            }
-        </script>
+    <script>
+        function confirmar() {
+            confirm("Cadastro realizado com sucesso!");
+            window.location.href = "index.html";
+        }
+    </script>
 </head>
 
 <div class="container-fluid">
@@ -96,23 +99,27 @@
         </nav>
         
     
-        <form method="POST" action="registroEstudante.php" enctype="multipart/form-data" class="login-aluno">
+        <form method="POST" action="validaEmpresa.php" enctype="multipart/form-data" class="login-empresa">
             <div class="row">
     
-                <p class="description"> Acesso para Estudante</p>
+                <p class="description"> Acesso para Empresa</p>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput" class="form-label"></label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput" placeholder="Login">
+                    <input type="text" class="form-control form-input" id="formGroupExampleInput" placeholder="Login" name="username">
                 </div>
     
                 <div class="mb-3" id="campoForm">
                     <label for="formGroupExampleInput2" class="form-label"></label>
-                    <input type="text" class="form-control form-input" id="formGroupExampleInput2" placeholder="Senha">
+                    <input type="text" class="form-control form-input" id="formGroupExampleInput2" placeholder="Senha" name="password">
                 </div>
-    
+                <?php
+                    if($erro == 1) {
+                        echo "<p style='color: #ff0000; margin-left: 48px'>Usuário ou senha inválidos</p>";
+                    }
+                ?>
                 <button type="submit" class="btn btn-primary btn-lg" id="button">Entrar</button>
-                <button type="button" class="btn"><a href="cadastroEstudante.php" id="acesso-estudante">Primeiro acesso</a></button>
+                <button type="button" class="btn"><a href="cadastroEmpresa.php" id="acesso-empresa">Quero ser empresa parceira</a></button>
             </div>
         </form>
 
