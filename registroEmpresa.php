@@ -30,7 +30,7 @@
             $sql = "INSERT INTO business(name, password, description, cnpj) VALUES ('$name', '$password', '$description', '$cnpj')";
 
             mysqli_query($link, $sql) or die("Erro ao registrar a empresa!");
-            header("location: index.html");
+            header("location: loginEmpresa.html");
         }
     }
 ?>
